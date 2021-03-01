@@ -10,8 +10,12 @@ import uuid
 import time
 from PIL import Image
 from mss import mss
+import os
+import glob
 
 """
+game address
+
 http://www.trex-game.skipser.com/
 """
 
@@ -21,8 +25,14 @@ limits = {"top":375, "left": 740, "width":250, "height": 100 }
 # mss is cuts region of interest frame
 sct = mss()
 
-i = 0
+if os.path.exists("./img"):
+    files = glob.glob('./img/*')
+    for f in files:
+        os.remove(f)
+else:
+    os.makedirs("./img")
 
+i = 0
 def recordScreen(recordID, key):
     global i
     
@@ -50,13 +60,13 @@ while True:
     try:
         if keyboard.is_pressed(keyboard.KEY_UP):
             recordScreen(recordID, "up")
-            time.sleep(0.1)
+            time.sleep(0.3)
         elif keyboard.is_pressed(keyboard.KEY_DOWN):
             recordScreen(recordID, "down")
-            time.sleep(0.1)
+            time.sleep(0.3)
         elif keyboard.is_pressed("right"):
             recordScreen(recordID, "right")
-            time.sleep(0.1)
+            time.sleep(0.3)
     except RuntimeError: continue
 
         
