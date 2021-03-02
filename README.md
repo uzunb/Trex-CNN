@@ -3,7 +3,6 @@
 <p align="center">
   <img width="694" height="116" src="https://user-images.githubusercontent.com/39219223/109692329-7189c880-7b99-11eb-8402-f42863a9d31a.gif">
 </p>
-![demo]()  
 
 Teach T-Rex to dodge obstacles in 3 stages.  
   
