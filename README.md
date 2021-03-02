@@ -1,9 +1,9 @@
 # T-Rex-Runner-CNN
 
 <p align="center">
-  <img width="623" height="180" src="https://user-images.githubusercontent.com/39219223/109534425-62891480-7acc-11eb-82b5-bd2c50258b37.png">
+  <img width="694" height="116" src="https://user-images.githubusercontent.com/39219223/109692329-7189c880-7b99-11eb-8402-f42863a9d31a.gif">
 </p>
-
+![demo]()  
 
 Teach T-Rex to dodge obstacles in 3 stages.  
   
@@ -64,6 +64,7 @@ python trex_play.py
 
 - The playing pixels and the dataset collection pixels must be the same. Because program watches and grabs your ROI pixels.
 - Your score affects train and test accuracy in dataset collection stage. Also best record of T-Rex too.  
+- Linux users must switch to super user mode with  ```sudo su ``` command for keyboard library. 
 
 ---
 
